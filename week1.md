@@ -10,7 +10,7 @@ The system acts as a bridge between users and backend AI capabilities, enabling 
 
 ## 2. System Architecture Flow
 ```text
-       User
+                  User
                     │
                     ▼
             WhatsApp Channel
