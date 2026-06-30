@@ -9,27 +9,33 @@ The system acts as a bridge between users and backend AI capabilities, enabling 
 ---
 
 ## 2. System Architecture Flow
-
-The high-level message flow is:
-WhatsApp User
-    ↓
-WhatsApp Channel (OpenClaw plugin)
-    ↓
-Gateway (runtime server)
-    ↓
-Orchestrator (skill router)
-    ↓
-Skill (message handler)
-    ↓
-Tool (optional API call)
-    ↓
-Memory (session + vector store)
-    ↓
-Response
-    ↓
-WhatsApp reply
-
-
+```text
+       User
+                    │
+                    ▼
+            WhatsApp Channel
+                    │
+                    ▼
+        OpenClaw Gateway (Runtime)
+                    │
+                    ▼
+        Session & Orchestrator
+                    │
+                    ▼
+             LLM / Skill Router
+          ┌─────────┴─────────┐
+          ▼                   ▼
+      Memory             Tool Calls
+          └─────────┬─────────┘
+                    ▼
+             Response Generation
+                    │
+                    ▼
+             WhatsApp Channel
+                    │
+                    ▼
+                  User
+```
 ---
 
 ## 3. Core Components
