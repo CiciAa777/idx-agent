@@ -1,3 +1,7 @@
+Created new skill: C:\Users\CiciA\.openclaw\workspace\skills\property-search
+![whatsapp query](week3-1.png)
+![SQL check](week3-2.png)
+
 (gen) PS E:\intern\idxexchange\agent\openclaw> npx tsx .agents/skills/property-search/test-db.ts
 🚀 Running Week 3 Database Pipeline Test...
 
@@ -39,3 +43,5 @@
   📅 Close Date:   2026-06-15
 ------------------------------
 (gen) PS E:\intern\idxexchange\agent\openclaw> 
+
+
